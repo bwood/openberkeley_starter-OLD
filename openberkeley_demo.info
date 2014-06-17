@@ -1,0 +1,10 @@
+name = OpenBerkeley Demo
+description = Demo content for new Open Berkeley sites.
+core = 7.x
+package = Open Berkeley
+version = 7.x-0.1
+project = openberkeley_demo
+dependencies[] = migrate
+dependencies[] = page_manager
+files[] = import/openberkeley_demo.pages.inc
+;files[] = import/openberkeley_demo.menu.inc
