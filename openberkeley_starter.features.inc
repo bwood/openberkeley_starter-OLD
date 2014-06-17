@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * openberkeley_demo.features.inc
+ * openberkeley_starter.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function openberkeley_demo_ctools_plugin_api($module = NULL, $api = NULL) {
+function openberkeley_starter_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }

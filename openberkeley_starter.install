@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Install hooks for openberkeley_starter.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function openberkeley_starter_enable() {
+  _panopoly_core_import_demo_content(array('OpenBerkeleyStarterNodePages'));
+}
+
+/**
+ * Implements hook_disable().
+ */
+function openberkeley_starter_disable() {
+  _panopoly_core_rollback_demo_content(array('OpenBerkeleyStarterNodePages'));
+}

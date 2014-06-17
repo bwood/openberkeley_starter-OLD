@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Code for the OpenBerkeley Demo feature.
+ */
+
+include_once 'openberkeley_starter.features.inc';
+
+/**
+ * Implements hook_migrate_api().
+ */
+function openberkeley_starter_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'OpenBerkeleyStarterNodePages' => array('class_name' => 'OpenBerkeleyStarterNodePages'),
+      //'OpenBerkeleyStarterMenu' => array('class_name' => 'OpenBerkeleyStarterMenu'),
+    ),
+  );
+  return $api;
+}

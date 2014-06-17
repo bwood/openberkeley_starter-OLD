@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * openberkeley_demo.pages_default.inc
+ * openberkeley_starter.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function openberkeley_demo_default_page_manager_pages() {
+function openberkeley_starter_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;

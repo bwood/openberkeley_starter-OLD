@@ -5,7 +5,7 @@
  * Migrations for Basic Nodes.
  */
 
-class OpenBerkeleyDemoNodePages extends Migration {
+class OpenBerkeleyStarterNodePages extends Migration {
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
     $this->description = t('Import Content Pages.');
@@ -22,10 +22,10 @@ class OpenBerkeleyDemoNodePages extends Migration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $import_path = drupal_get_path('module', 'openberkeley_demo') . '/import/data/';
+    $import_path = drupal_get_path('module', 'openberkeley_starter') . '/import/data/';
 
     // Create a MigrateSource object.
-    $this->source = new MigrateSourceCSV($import_path . 'openberkeley_demo.pages.csv', $this->csvcolumns(), array('header_rows' => 1));
+    $this->source = new MigrateSourceCSV($import_path . 'openberkeley_starter.pages.csv', $this->csvcolumns(), array('header_rows' => 1));
 
     $this->destination = new MigrateDestinationNode('panopoly_page');
 
