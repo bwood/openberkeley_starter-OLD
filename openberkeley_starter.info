@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = menu
 dependencies[] = migrate
 dependencies[] = page_manager
+dependencies[] = search
 features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:2
 features[menu_custom][] = menu-footer-menu
