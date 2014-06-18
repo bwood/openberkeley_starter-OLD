@@ -66,7 +66,7 @@ function openberkeley_starter_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '287',
+      'nid' => openberkeley_starter_find_page("Welcome"),
       'links' => 0,
       'leave_node_title' => 0,
       'identifier' => '',
