@@ -4,6 +4,7 @@ core = 7.x
 package = Open Berkeley
 version = 7.x-0.1
 project = openberkeley_starter
+dependencies[] = block
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
