@@ -14,3 +14,4 @@ features[features_api][] = api:2
 features[menu_custom][] = menu-footer-menu
 files[] = import/openberkeley_starter.pages.inc
 files[] = import/openberkeley_starter.menu.inc
+files[] = import/openberkeley_starter.blocks.inc
