@@ -1,5 +1,5 @@
-name = OpenBerkeley Demo
-description = Demo content for new Open Berkeley sites.
+name = OpenBerkeley starter content
+description = Starter content for new Open Berkeley sites.
 core = 7.x
 package = Open Berkeley
 version = 7.x-0.1
