@@ -14,7 +14,7 @@ function openberkeley_starter_migrate_api() {
     'api' => 2,
     'migrations' => array(
       'OpenBerkeleyStarterNodePages' => array('class_name' => 'OpenBerkeleyStarterNodePages'),
-      //'OpenBerkeleyStarterMenu' => array('class_name' => 'OpenBerkeleyStarterMenu'),
+      'OpenBerkeleyStarterMenu' => array('class_name' => 'OpenBerkeleyStarterMenu'),
     ),
   );
   return $api;

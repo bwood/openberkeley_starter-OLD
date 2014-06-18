@@ -36,14 +36,11 @@ class OpenBerkeleyStarterNodePages extends Migration {
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('body', 'body');
     $this->addFieldMapping('body:format')->defaultValue('editor');
-    // TODO: This is a term reference! We need to handle this special...
-    //$this->addFieldMapping('field_home_page', 'home_page');
   }
 
   protected function csvcolumns() {
     $columns[0] = array('title', 'Title');
     $columns[1] = array('body', 'Body');
-    //$columns[2] = array('home_page', 'Home Page');
     return $columns;
   }
 }

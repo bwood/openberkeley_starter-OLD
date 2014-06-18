@@ -8,12 +8,12 @@
  * Implements hook_enable().
  */
 function openberkeley_starter_enable() {
-  _panopoly_core_import_demo_content(array('OpenBerkeleyStarterNodePages'));
+  _panopoly_core_import_demo_content(array('OpenBerkeleyStarterNodePages', 'OpenBerkeleyStarterMenu'));
 }
 
 /**
  * Implements hook_disable().
  */
 function openberkeley_starter_disable() {
-  _panopoly_core_rollback_demo_content(array('OpenBerkeleyStarterNodePages'));
+  _panopoly_core_rollback_demo_content(array('OpenBerkeleyStarterNodePages', 'OpenBerkeleyStarterMenu'));
 }
