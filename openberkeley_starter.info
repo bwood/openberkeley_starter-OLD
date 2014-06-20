@@ -1,4 +1,4 @@
-name = OpenBerkeley starter content
+name = OpenBerkeley Starter Content
 description = Starter content for new Open Berkeley sites.
 core = 7.x
 package = Open Berkeley

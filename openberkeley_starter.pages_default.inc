@@ -54,7 +54,7 @@ function openberkeley_starter_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Welcome to the Chancellor’s Office';
+  $display->title = 'Welcome to your Open Berkeley site';
   $display->uuid = 'a9cb4da8-0760-4e3a-b383-715fca040e22';
   $display->content = array();
   $display->panels = array();
