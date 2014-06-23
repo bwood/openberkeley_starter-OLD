@@ -78,8 +78,8 @@ function openberkeley_starter_enable() {
  */
 function openberkeley_starter_disable() {
   _panopoly_core_rollback_demo_content(array(
-    'OpenBerkeleyStarterNodePages',
     'OpenBerkeleyStarterMenu',
+    'OpenBerkeleyStarterNodePages',
     'OpenBerkeleyStarterBlocks',
   ));
 }
