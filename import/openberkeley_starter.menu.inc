@@ -50,11 +50,16 @@ class OpenBerkeleyStarterMenu extends Migration {
     if ($row->path != '<front>' && !preg_match('/https?:\/\//', $row->path)) {
       // Convert the alias to the node path.
       $node_path = drupal_lookup_path('source', $row->path);
-      if ($node_path == FALSE) {
+      if ($node_path !== FALSE) {
+        $row->path = $node_path;
+      }
+      if (($node_path === FALSE)  && (!drupal_valid_path($row->path))) {
+        // if the node path can't be resolved, make sure drupal_valid_path_fails
+        // too.  If drupal_valid_path doesn't fail, this might be a path defined
+        // at admin/structure/pages. e.g. news-archive is defined there by
+        // the news feature.
         return FALSE;
       }
-
-      $row->path = $node_path;
     }
   }
 
