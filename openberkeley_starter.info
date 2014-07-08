@@ -9,6 +9,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
 dependencies[] = migrate
+dependencies[] = openberkeley_pages
 dependencies[] = page_manager
 dependencies[] = panopoly_theme
 dependencies[] = search
