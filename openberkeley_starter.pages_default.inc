@@ -88,7 +88,7 @@ function openberkeley_starter_default_page_manager_pages() {
     $pane->pid = 'new-8799fdcc-a2cb-42d6-8b69-d2bbbdc533e9';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'news_archive-panel_pane_1';
+    $pane->subtype = 'openberkeley_news_archive-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
