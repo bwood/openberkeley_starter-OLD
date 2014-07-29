@@ -92,9 +92,14 @@ function openberkeley_starter_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => NULL,
+      'view_mode' => 'teaser',
       'widget_title' => '',
-      'items_per_page' => NULL,
+      'items_per_page' => '',
+      'more_link' => 1,
+      'override_title' => '',
+      'override_title_text' => '',
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array();
