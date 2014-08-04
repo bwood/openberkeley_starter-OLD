@@ -27,7 +27,7 @@ class OpenBerkeleyStarterNodePages extends Migration {
     // Create a MigrateSource object.
     $this->source = new MigrateSourceCSV($import_path . 'openberkeley_starter.pages.csv', $this->csvcolumns(), array('header_rows' => 1));
 
-    $this->destination = new MigrateDestinationNode('panopoly_page');
+    $this->destination = new MigrateDestinationNode('openberkeley_content_page');
 
     $this->addFieldMapping('uid')->defaultValue(1);
     $this->addFieldMapping('status')->defaultValue(1);

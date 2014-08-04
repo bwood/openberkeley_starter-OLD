@@ -88,13 +88,18 @@ function openberkeley_starter_default_page_manager_pages() {
     $pane->pid = 'new-8799fdcc-a2cb-42d6-8b69-d2bbbdc533e9';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'news_archive-panel_pane_1';
+    $pane->subtype = 'openberkeley_news_archive-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => NULL,
+      'view_mode' => 'teaser',
       'widget_title' => '',
-      'items_per_page' => NULL,
+      'items_per_page' => '',
+      'more_link' => 1,
+      'override_title' => '',
+      'override_title_text' => '',
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array();
